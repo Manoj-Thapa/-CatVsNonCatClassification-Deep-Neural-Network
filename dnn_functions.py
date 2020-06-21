@@ -1,9 +1,7 @@
 import numpy as np
 import h5py
 
-
 def sigmoid(Z):
-
     """
 
             Implements the sigmoid activation in numpy
@@ -24,7 +22,6 @@ def sigmoid(Z):
 
 
 def relu(Z):
-
     """
 
             Implement the RELU function.
@@ -47,7 +44,6 @@ def relu(Z):
 
 
 def relu_backward(dA, cache):
-
     """
 
             Implement the backward propagation for a single RELU unit.
@@ -73,7 +69,6 @@ def relu_backward(dA, cache):
 
 
 def sigmoid_backward(dA, cache):
-
     """
 
             Implement the backward propagation for a single SIGMOID unit.
@@ -98,7 +93,6 @@ def sigmoid_backward(dA, cache):
 
 
 def load_dataset():
-
     """
 
             The dataset is taken from Coursera
@@ -127,7 +121,6 @@ def load_dataset():
 
 
 def initialize_parameters_deep(layer_dims):
-
     """
 
             Arguments:
@@ -156,7 +149,6 @@ def initialize_parameters_deep(layer_dims):
 
 
 def linear_forward(A, W, b):
-
     """
 
             Implement the linear part of a layer's forward propagation.
@@ -181,7 +173,6 @@ def linear_forward(A, W, b):
 
 
 def linear_activation_forward(A_prev, W, b, activation):
-
     """
 
             Implement the forward propagation for the LINEAR->ACTIVATION layer
@@ -216,7 +207,6 @@ def linear_activation_forward(A_prev, W, b, activation):
 
 
 def L_model_forward(X, parameters):
-
     """
             Implement forward propagation for the [LINEAR->RELU]*(L-1)->LINEAR->SIGMOID computation
 
@@ -253,7 +243,6 @@ def L_model_forward(X, parameters):
 
 
 def compute_cost(AL, Y):
-
     """
             Implement the cost function defined by equation (7).
 
@@ -278,7 +267,6 @@ def compute_cost(AL, Y):
 
 
 def linear_backward(dZ, cache):
-
     """
             Implement the linear portion of backward propagation for a single layer (layer l)
 
@@ -308,7 +296,6 @@ def linear_backward(dZ, cache):
 
 
 def linear_activation_backward(dA, cache, activation):
-
     """
 
             Implement the backward propagation for the LINEAR->ACTIVATION layer.
@@ -338,7 +325,6 @@ def linear_activation_backward(dA, cache, activation):
 
 
 def L_model_backward(AL, Y, caches):
-
     """
             Implement the backward propagation for the [LINEAR->RELU] * (L-1) -> LINEAR -> SIGMOID group
 
@@ -385,7 +371,6 @@ def L_model_backward(AL, Y, caches):
 
 
 def update_parameters(parameters, grads, learning_rate):
-
     """
 
             Update parameters using gradient descent
@@ -412,7 +397,6 @@ def update_parameters(parameters, grads, learning_rate):
 
 
 def predict(X, y, parameters):
-
     """
 
             This function is used to predict the results of a  L-layer neural network.
