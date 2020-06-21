@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 from PIL import Image
 from dnn_functions import *
 
-
 def preprocessing():
     """
 
